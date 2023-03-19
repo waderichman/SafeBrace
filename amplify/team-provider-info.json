@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-safebrace-dev-164202-authRole",
+      "UnauthRoleArn": "arn:aws:iam::024986459968:role/amplify-safebrace-dev-164202-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::024986459968:role/amplify-safebrace-dev-164202-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-safebrace-dev-164202-deployment",
+      "UnauthRoleName": "amplify-safebrace-dev-164202-unauthRole",
+      "StackName": "amplify-safebrace-dev-164202",
+      "StackId": "arn:aws:cloudformation:us-east-1:024986459968:stack/amplify-safebrace-dev-164202/81ab88d0-c696-11ed-ad94-0e314b4fc9fb",
+      "AmplifyAppId": "dtx73w573bruf"
+    },
+    "categories": {
+      "auth": {
+        "safebracee9b0886e": {}
+      },
+      "function": {
+        "SafeBracePopulate": {}
+      }
+    }
+  }
+}
