@@ -12,11 +12,17 @@
       "AmplifyAppId": "dtx73w573bruf"
     },
     "categories": {
-      "auth": {
-        "safebracee9b0886e": {}
-      },
       "function": {
-        "SafeBracePopulate": {}
+        "HomePopulate": {
+          "deploymentBucketName": "amplify-safebrace-dev-164202-deployment",
+          "s3Key": "amplify-builds/HomePopulate-534d634a707771495553-build.zip"
+        }
+      },
+      "api": {
+        "SafeBraceAPI": {}
+      },
+      "auth": {
+        "safebraceebf25423": {}
       }
     }
   }

@@ -10,13 +10,11 @@ repositories {
 }
 
 dependencies {
-    compile (
+    implementation (
         'com.amazonaws:aws-lambda-java-core:1.2.0',
         'com.amazonaws:aws-lambda-java-events:2.2.7'
     )
 }
-
-jar.baseName = 'latest_build'
 
 task buildZip(type: Zip) {
     from compileJava
@@ -25,6 +23,7 @@ task buildZip(type: Zip) {
         from configurations.runtimeClasspath
     }
     archiveFileName = 'latest_build.zip'
+    archivesBaseName = "$project.name"
 }
 
 build.dependsOn buildZip

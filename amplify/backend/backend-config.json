@@ -1,6 +1,6 @@
 {
   "api": {
-    "SafeBraceBE": {
+    "SafeBraceAPI": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "SafeBracePopulate"
+          "resourceName": "HomePopulate"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,7 +16,7 @@
     }
   },
   "auth": {
-    "safebracee9b0886e": {
+    "safebraceebf25423": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -32,7 +32,9 @@
           "EMAIL"
         ],
         "socialProviders": [],
-        "usernameAttributes": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
         "verificationMechanisms": [
           "EMAIL"
         ]
@@ -42,10 +44,28 @@
     }
   },
   "function": {
-    "SafeBracePopulate": {
+    "HomePopulate": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_HomePopulate_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "HomePopulate"
+        }
+      ]
+    },
+    "AMPLIFY_function_HomePopulate_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "HomePopulate"
+        }
+      ]
     }
   }
 }

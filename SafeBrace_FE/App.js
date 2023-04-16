@@ -1,32 +1,17 @@
+import React from 'react';
+import { AppRegistry } from 'react-native';
+import Navigation from './navigation/Navigation';
 import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { withAuthenticator } from 'aws-amplify-react-native'
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import awsmobile from './aws-exports';
 
-Amplify.configure({
-  ...awsconfig,
-  Analytics: {
-    disabled: true,
-  },
-});
+Amplify.configure(awsmobile);
 
-function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Navigation></Navigation>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+AppRegistry.registerComponent('SafeBrace', () => App);
 
-export default withAuthenticator(App);
+export default App;
