@@ -60,7 +60,7 @@ const LoginScreen = ({ navigation }) => {
         <Text style={styles.register_button}>Need to Create an Account?</Text>
       </TouchableOpacity> 
       <TouchableOpacity style={styles.loginBtn} onPress={ () => onSignInPressed() }>
-        <Text style={styles.loginText}>LOGIN</Text> 
+        <Text>LOGIN</Text> 
       </TouchableOpacity> 
     </View> 
   );
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#4d81ae",
+    backgroundColor: "#2196F3",
   },
 });
 
